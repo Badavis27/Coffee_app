@@ -1,0 +1,134 @@
+<!--
+  Generated template for the HighPointPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color = "primary">
+    <ion-title text-center>High Point</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<h1> Menu </h1>
+	<br>
+	<div class = "menuback">
+  <h3>Drinks</h3>
+		<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Espresso" value ="Espresso"></ion-checkbox>
+     		<ion-label>
+        		Espresso
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+     <p>Brewed by expressing or forcing a small amount of nearly boiling water under pressure through finely ground coffee beans</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Latte"></ion-checkbox>
+     		<ion-label>
+        		Latte
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number2" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p> Milk steamed to microfoam, served in a glass with a half shot of espresso poured gently through the foamy top layer</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Mocha_Bianca"></ion-checkbox>
+     		<ion-label>
+        		Mocha Bianca
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number3" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p> A classic mocha – a combination of coffee and chocolate – that uses white chocolate in place of cocoa powder</p>
+    <br>
+  </div>
+  <div class = "menuback">
+	<h3>Food</h3>
+	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Cinnamon_Rolls"></ion-checkbox>
+     		<ion-label>
+        		Cinnamon Rolls
+      		</ion-label>
+      	<ion-icon name='restaurant' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number4" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+     <p> Cinnamon, sugar, and butter, which provide a robust and sweet flavor</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Cream_Cheese_Danish"></ion-checkbox>
+     		<ion-label>
+        		Cream Cheese Danish
+      		</ion-label>
+      	<ion-icon name='restaurant' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number5" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p> A yeast dough is rolled out thinly, covered with thin slices of butter and cream cheese between the layers of dough</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Handmade_Parfait"></ion-checkbox>
+     		<ion-label>
+        		Handmade Parfait
+      		</ion-label>
+      	<ion-icon name='restaurant' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number6" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p> boiling cream, egg, sugar and syrup to create a custard-like puree</p>
+    <br>
+    <br>
+    <div>
+    	<button ion-button  color="secondary" (click)="sendItem(); doAlert()">Add Items to Order Page</button>
+    </div>
+  </div>
+</ion-content>

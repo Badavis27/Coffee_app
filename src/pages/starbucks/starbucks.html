@@ -1,0 +1,134 @@
+<!--
+  Generated template for the StarbucksPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color = "primary">
+    <ion-title>Starbucks</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<h1> Menu </h1>
+	<br>
+  <div class = "menuback">
+	<h3>Drinks</h3>
+		<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Iced_Coffee"></ion-checkbox>
+     		<ion-label>
+        		Iced Coffee
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Chilled home brewed coffee</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Juniper_Creme"></ion-checkbox>
+     		<ion-label>
+        		Juniper Creme
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number2" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>This beverage has a light, pine-like flavor with delightful citrus undertones.</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Caffe_Misto"></ion-checkbox>
+     		<ion-label>
+        		Caffe Misto
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number3" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>A one-to-one mix of fresh brewed coffee and steamed milk add up to one distinctly delicious coffee drink.</p>
+    <br>
+  </div>
+  <div class = "menuback">
+	<h3>Food</h3>
+	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Cheese_Danish"></ion-checkbox>
+     		<ion-label>
+        		Cheese Danish
+      		</ion-label>
+      	<ion-icon name='restaurant' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number4" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>A flaky pastry folded around reduced-fat cream cheese</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Almond_Croissant"></ion-checkbox>
+     		<ion-label>
+        		Almond Croissant
+      		</ion-label>
+      	<ion-icon name='restaurant' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number5" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Our rich, almond flan is enveloped in a flaky, buttery croissant, then topped with sliced almonds</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Blueberry_Scone"></ion-checkbox>
+     		<ion-label>
+        		Blueberry Scone
+      		</ion-label>
+      	<ion-icon name='restaurant' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number6" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>A traditional scone with blueberries, buttermilk and lemon</p>
+    <br>
+    <br>
+    <div>
+    	<button ion-button  color="secondary" (click)="sendItem(); doAlert()">Add Items to Order Page</button>
+    </div>
+  </div>
+</ion-content>

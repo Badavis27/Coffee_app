@@ -1,0 +1,33 @@
+page-contact {
+
+	ion-content{
+		background: #35ae9b !important;
+	}
+
+	.logo2{
+
+		width: 150px;
+		height: 150px;
+	}
+
+	.shops{
+
+		width: 70%;
+		height: 50%;
+		-webit-border-radius: 50%;
+		border-radius: 50%;
+	}
+	div{
+		text-align: center;
+	}
+
+	ion-card{
+		display: flex;
+		flex-direction: column;
+		width: 1%;
+		height: 70%;
+		//margin: 0 auto;
+		//background: rgba(255,255,255,0.5);
+	}
+
+}

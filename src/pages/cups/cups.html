@@ -1,0 +1,140 @@
+<!--
+  Generated template for the CupsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Cups</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<h1> Menu </h1>
+	<br>
+  <div class = "menuback">
+	<h3>Originals</h3>
+		
+      <ion-item>
+        <ion-label>
+            Mocha
+          </ion-label>
+    	<ion-checkbox checked ="false" [(ngModel)] = "mocha" value ="mocha"></ion-checkbox>
+      <ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number" >
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Mocha Ghirardelli™ chocolate combined with our espresso and textured milk (dark or white chocolate).</p>
+    	<ion-item>
+        <ion-label>
+            Capitol Street Latte
+          </ion-label>
+          
+    	<ion-checkbox checked="false" [(ngModel)] = "Capitol_Street_Latte"></ion-checkbox>
+     		<ion-icon name='cafe' item-start></ion-icon>
+      
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number2">
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Caramel combined with our espresso and textured milk.</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Blondie_Latte"></ion-checkbox>
+     		<ion-label>
+        		Blondie Latte
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+        <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number3">
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Caramel and white Ghirardelli™ chocolate combined with our espresso and textured milk.</p>
+  </div>
+    <br>
+    <br>
+    <br>
+  <div class = "menuback">
+	<h3>Coffee</h3>
+	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Drip_Coffee"></ion-checkbox>
+     		<ion-label>
+        		Drip Coffee
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+         <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number4">
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Fresh from our roastery,we have daily options of medium roasted, darker roasted, signature flavored, or decaf coffees.</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Shot_in_the_Dark"></ion-checkbox>
+     		<ion-label>
+        		Shot in the Dark
+      		</ion-label>
+      	<ion-icon name='cafe' item-start></ion-icon>
+         <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number5">
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Add a shot of espresso to today’s dark roast coffee.</p>
+    	<ion-item>
+    	<ion-checkbox checked="false" [(ngModel)] = "Cafe_Au_Lait"></ion-checkbox>
+     		<ion-label>
+        		Café Au Lait
+      		</ion-label>
+      <ion-icon name='cafe' item-start></ion-icon>
+         <ion-label>quantity</ion-label>
+        <ion-select [(ngModel)] = "number6">
+          <ion-option value=1>1</ion-option>
+          <ion-option value=2>2</ion-option>
+          <ion-option value=3>3</ion-option>
+          <ion-option value=4>4</ion-option>
+          <ion-option value=5>5</ion-option>
+          <ion-option value=6>6</ion-option>
+        </ion-select>
+    </ion-item>
+    <p>Made with one of our freshly brewed coffees and steamed milk.</p>
+    <br>
+    <br>
+    <div>
+    	<button ion-button  color="secondary" (click)="sendItem(); doAlert()">Add Items to Order Page</button>
+    </div>
+  </div>
+
+</ion-content>
